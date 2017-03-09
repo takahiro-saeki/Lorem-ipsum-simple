@@ -1,11 +1,12 @@
 {
   "name": "lorem-ipsum-simple",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "this is lorem ipsum generator for javascript",
   "main": "dist/index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "generate": "cross-env NODE_ENV=generate webpack --progress --hide-modules",
     "tree": "tree -I node_modules"
   },
   "repository": {

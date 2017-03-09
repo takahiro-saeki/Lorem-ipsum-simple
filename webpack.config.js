@@ -37,8 +37,26 @@ module.exports = {
   ],
 };
 
+if (process.env.NODE_ENV === 'generate') {
+  module.exports.plugins = (module.exports.plugins || []).concat([
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: '"production"'
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap: false,
+      compress: {
+        warnings: false
+      }
+    }),
+    new webpack.LoaderOptionsPlugin({
+      minimize: true
+    })
+  ])
+}
+
 if (process.env.NODE_ENV === 'production') {
-  module.exports.devtool = '#source-map'
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
       'process.env': {
@@ -54,9 +72,10 @@ if (process.env.NODE_ENV === 'production') {
     new webpack.LoaderOptionsPlugin({
       minimize: true
     }),
+
     new HtmlWebpackPlugin({
       title: 'lorem ipsom generator /test',
       template: path.join(__dirname, './src/index.ejs')
-    }),
+    })
   ])
 }
