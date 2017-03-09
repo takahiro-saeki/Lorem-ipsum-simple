@@ -2,7 +2,7 @@
   "name": "lorem-ipsum-simple",
   "version": "0.0.1",
   "description": "this is lorem ipsum generator for javascript",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
@@ -15,6 +15,7 @@
   "keywords": [
     "javascript"
   ],
+  "private": false,
   "author": "Takahiro-Saeki",
   "license": "MIT",
   "bugs": {
