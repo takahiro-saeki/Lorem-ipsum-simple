@@ -37,8 +37,10 @@ const adjust = arr => {
   return final
 }
 
-export const generate = len => {
+const generate = len => {
   let init = generateSimple(separate(data), len);
   let ren = adjust(init);
   return ren;
 }
+
+module.exports = (len) => generate(len)
