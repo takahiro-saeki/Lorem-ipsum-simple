@@ -1,6 +1,6 @@
 {
   "name": "lorem-ipsum-simple",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "this is lorem ipsum generator for javascript",
   "main": "./dist/index.js",
   "scripts": {
