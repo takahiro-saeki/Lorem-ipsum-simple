@@ -43,4 +43,4 @@ const generate = len => {
   return ren;
 }
 
-module.exports = (len) => generate(len)
+export default generate;
