@@ -10,7 +10,7 @@ or
 This is work-progress. it's really tiny now. I'm supposed to make additional feature.
 
 ##Basic feature.
-```
+```javascript
 import lorem from 'lorem-ipsum-simple';
 lorem(20) // => generate mock text.
 console.log(lorem(20))
