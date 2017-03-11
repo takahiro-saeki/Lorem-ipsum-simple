@@ -16,8 +16,10 @@ lorem(20) // => generate mock text.
 console.log(lorem(20))
 // => Tristique tristique eu pharetra eleifend blandit vitae tellus quis ante cursus molestie eget sodales rhoncus turpis vulputate praesent aliquam elit tellus.
 // like above result.
-// you can add any type of number in argument. after call this function, it will render any words in your console.
-// but maximum is 200. if you set over 200 number in argument, this function will render 200 words in your console.
+// you can add any type of number in argument. after call this function,
+// it will render any words in your console.
+// but maximum is 200. if you set over 200 number in argument,
+// this function will render 200 words in your console.
 ```
 
 ## Background
