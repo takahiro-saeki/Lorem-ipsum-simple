@@ -14,7 +14,10 @@ This is work-progress. it's really tiny now. I'm supposed to make additional fea
 import lorem from 'lorem-ipsum-simple';
 lorem(20) // => generate mock text.
 console.log(lorem(20))
-// => Tristique tristique eu pharetra eleifend blandit vitae tellus quis ante cursus molestie eget sodales rhoncus turpis vulputate praesent aliquam elit tellus.
+// => Tristique tristique eu pharetra eleifend blandit
+// vitae tellus quis ante cursus molestie eget sodales
+// rhoncus turpis vulputate praesent aliquam elit tellus.
+// 
 // like above result.
 // you can add any type of number in argument. after call this function,
 // it will render any words in your console.
